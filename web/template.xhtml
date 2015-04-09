@@ -5,17 +5,17 @@
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
     <h:head>
         <title>Facelet Title</title>
+        <h:outputStylesheet library="css" name="style.css"/>
     </h:head>
     <h:body>
-        <ui:composition template="./template.xhtml">
-            <ui:param name="titre_page" value="hello JSF"/>
-            <ui:param name="thispage" value="1"/>
-            
-            <ui:define name="content">
-                du contenu ! 
-            </ui:define>
-            
-        </ui:composition>
+        <div id="global">
+            <ui:include src="header.xhtml"/>
+            <ui:include src="menu.xhtml"/>
+            <div id="content">
+                <ui:insert name="content"/>
+            </div>
+            <ui:include src="footer.xhtml"/>
+        </div>
     </h:body>
 </html>
 
