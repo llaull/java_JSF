@@ -14,11 +14,12 @@
             <ui:define name="content">
                 <h:form prependId="false">
                     <h:panelGrid columns="2" class="" columnClasses="col1,col2">
-                        <h:outputLabel for="login" value="Login"/>
-                        <h:inputText id="login" value="#{beanController.login}" />
-                        <h:panelGroup></h:panelGroup>
-                        <h:commandButton action="confirmation" value="Envoyer" />
+                        <h:outputText value="Login ->"/>
+                        <h:outputText value="#{beanController.login}" />
                     </h:panelGrid>
+                    <h:button value="retour" outcome="index"/>
+                    <br/>
+                    <h:link value="retour" outcome="index"/>
 
                 </h:form>
             </ui:define>
@@ -26,4 +27,3 @@
         </ui:composition>
     </h:body>
 </html>
-

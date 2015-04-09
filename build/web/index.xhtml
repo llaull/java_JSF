@@ -10,11 +10,19 @@
         <ui:composition template="./template.xhtml">
             <ui:param name="titre_page" value="hello JSF"/>
             <ui:param name="thispage" value="1"/>
-            
+
             <ui:define name="content">
-                du contenu ! 
+                <h:form prependId="false">
+                    <h:panelGrid columns="2" class="" columnClasses="col1,col2">
+                        <h:outputLabel for="login" value="Login"/>
+                        <h:inputText id="login" value="#{beanController.login}" />
+                        <h:panelGroup></h:panelGroup>
+                        <h:commandButton action="confirmation" value="Envoyer" />
+                    </h:panelGrid>
+
+                </h:form>
             </ui:define>
-            
+
         </ui:composition>
     </h:body>
 </html>
