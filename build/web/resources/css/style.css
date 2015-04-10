@@ -14,7 +14,7 @@ body{
     background-color: black;
 }
 
-input[type="text"],input[type="submit"],input[type="button"]{
+input[type="text"],input[type="submit"],input[type="button"],select,select > option,textarea{
     color: black;
 }
 

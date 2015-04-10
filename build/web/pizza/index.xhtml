@@ -24,6 +24,28 @@
                             <f:selectItems value="#{pizzaController.taillesPizzas}"/>
                         </h:selectOneRadio>
                         
+                        <h:outputLabel for="ingredients" value="ingredients"/>
+                        <h:selectManyCheckbox id="ingredients" value="#{pizzaController.pizza.ingredients}">
+                            <f:selectItems value="#{pizzaController.ingredientsPizzas}" var="ingred" itemValue="#{ingred.id}" itemLabel="#{ingred.libelle}"/>
+                        </h:selectManyCheckbox>
+                        
+                        <h:outputLabel for="paiement" value="paiement"/>
+                        <h:selectOneMenu id="paiement" value="#{pizzaController.pizza.paiement}">
+                            <f:selectItem itemLabel="Choisis" itemValue="-1"/>
+                            <f:selectItems value="#{pizzaController.moyensPaiement}"/>
+                        </h:selectOneMenu>     
+                        
+                        <h:outputLabel for="genres" value="paiement"/>
+                        <h:selectManyListbox id="genres" value="#{pizzaController.pizza.genres}">
+                            <f:selectItems value="#{pizzaController.listeGenres}"/>
+                        </h:selectManyListbox>
+                        
+                        <h:outputLabel for="commentaire" value="vos coms"/>
+                        <h:inputTextarea value="#{pizzaController.pizza.commentaire}">
+                        </h:inputTextarea>
+                        
+                        <h:outputLabel for="keep" value="save me"/>
+                        <h:selectBooleanCheckbox id="keep" value="#{pizzaController.pizza.keep}"/>
                         
                         <h:panelGroup></h:panelGroup>
                         <h:commandButton action="confirmation" value="Envoyer" />

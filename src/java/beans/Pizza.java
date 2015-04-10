@@ -17,7 +17,7 @@ public class Pizza {
     private int paiement;
     private List<Integer> genres;
     private boolean keep = false;
-    private String commentaire;
+    private String commentaire ="lache tes coms";
     private String email;
 
     public Pizza() {
