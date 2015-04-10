@@ -8,5 +8,13 @@ and open the template in the editor.
     Author     : Arkesys
 */
 *{
-    color:red;
+    color:white;
 }
+body{
+    background-color: black;
+}
+
+input[type="text"],input[type="submit"],input[type="button"]{
+    color: black;
+}
+

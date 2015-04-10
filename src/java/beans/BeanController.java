@@ -1,9 +1,11 @@
+package beans;
 
-
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Named;
 
-@Named
+@Named //(appele du robot)
 @RequestScoped
 public class BeanController {
 
@@ -13,7 +15,20 @@ public class BeanController {
         System.out.println("****************** created ******************");
     }
     
+    public String faireUnTruc(){
+        System.out.println("coucou toi !");
+        return "confirmation";
+    }
     
+    @PostConstruct
+    public void plop(){
+        System.out.println("après creation");
+    }
+    
+    @PreDestroy
+    public void plup(){
+        System.out.println("avant destruction");
+    }
 
     /**
      * @return the login
