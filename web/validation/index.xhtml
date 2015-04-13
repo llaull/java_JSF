@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>pizza lolo !</title>
+    </h:head>
+    <h:body>
+        <ui:composition template="../template.xhtml">
+            <ui:param name="titre_page" value="validator"/>
+            <ui:param name="thispage" value="3"/>
+
+            <ui:define name="content">
+                <h:form id="myForm" prependId="false">
+                    <h:messages/>
+                    <h:panelGrid columns="3">
+                        
+                        <h:outputLabel for="login" value="Login"/>
+                        <h:inputText id="login" value="#{joueur.login}" />
+                        <f:validateLength minimum="2" maximum="4"></f:validateLength>
+                        <h:message for="login"></h:message>
+                        
+                        <h:outputLabel for="score" value="Score"/>
+                        <h:inputText id="score" value="#{joueur.score}" label="score">
+                            <f:validateLongRange maximum="100"/>
+                        </h:inputText>
+                        <h:message for="score"></h:message>
+                        
+                        
+                        <h:panelGroup></h:panelGroup>
+                        <h:commandButton action="confirmation" value="Envoyer" />
+                    </h:panelGrid>
+
+                </h:form>
+            </ui:define>
+
+        </ui:composition>
+    </h:body>
+</html>
+

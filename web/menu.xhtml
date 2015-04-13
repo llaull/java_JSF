@@ -5,6 +5,13 @@
     <div id="nav">
         <h:link rendered="#{thispage==1}" outcome="/index"><p class="selected">Prem JSF</p></h:link>
         <h:link rendered="#{thispage!=1}" outcome="/index"><p>Prem JSF</p></h:link>
+
+        <h:link rendered="#{thispage==2}" outcome="/pizza/index.xhtml"><p class="selected">pizza</p></h:link>
+        <h:link rendered="#{thispage!=2}" outcome="/pizza/index.xhtml"><p>pizza</p></h:link>
+
+        <h:link rendered="#{thispage==3}" outcome="/validation/index.xhtml"><p class="selected">validation</p></h:link>
+        <h:link rendered="#{thispage!=3}" outcome="/validation/index.xhtml"><p>validation</p></h:link>
+
     </div>
 </ui:composition>
 
