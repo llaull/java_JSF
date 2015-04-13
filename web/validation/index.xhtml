@@ -29,6 +29,12 @@
                         </h:inputText>
                         <h:message for="score"></h:message>
                         
+                         <h:outputLabel for="email" value="Email"/>
+                         <h:inputText id="email" value="#{joueur.email}" label="email">
+                            <f:validator validatorId="MyEmailValidator"/>
+                        </h:inputText>
+                        <h:message for="email"></h:message>
+                        
                         
                         <h:panelGroup></h:panelGroup>
                         <h:commandButton action="confirmation" value="Envoyer" />
