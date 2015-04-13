@@ -3,10 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/MyDocs/JAVASE/demoJsf/src/java/BeanController.java</file>
-            <file>file:/C:/MyDocs/JAVASE/demoJsf/web/index_1.xhtml</file>
-            <file>file:/C:/MyDocs/JAVASE/demoJsf/web/index.xhtml</file>
-            <file>file:/C:/MyDocs/JAVASE/demoJsf/web/confirmation.xhtml</file>
+            <file>file:/C:/MyDocs/JAVASE/demoJsf/web/validation/index.xhtml</file>
+            <file>file:/C:/MyDocs/JAVASE/demoJsf/src/java/beans/Joueur.java</file>
+            <file>file:/C:/MyDocs/JAVASE/demoJsf/src/java/helpers/MyValidator.java</file>
+            <file>file:/C:/MyDocs/JAVASE/demoJsf/src/java/helpers/EmailValidator.java</file>
+            <file>file:/C:/MyDocs/JAVASE/demoJsf/web/WEB-INF/faces-config.xml</file>
+            <file>file:/C:/MyDocs/JAVASE/demoJsf/src/java/helpers/new_properties.properties</file>
         </group>
     </open-files>
 </project-private>
