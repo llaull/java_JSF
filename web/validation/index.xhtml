@@ -18,8 +18,9 @@
                     <h:panelGrid columns="3">
                         
                         <h:outputLabel for="login" value="Login"/>
-                        <h:inputText id="login" value="#{joueur.login}" />
+                        <h:inputText id="login" value="#{joueur.login}" validator="#{myValidator.validateNoToto}" >
                         <f:validateLength minimum="2" maximum="4"></f:validateLength>
+                        </h:inputText>
                         <h:message for="login"></h:message>
                         
                         <h:outputLabel for="score" value="Score"/>

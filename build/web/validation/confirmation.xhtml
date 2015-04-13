@@ -1,0 +1,22 @@
+<ui:composition template="../template.xhtml" xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <ui:param name="titre_page" value="hello JSF"/>
+    <ui:param name="thispage" value="1"/>
+
+    <ui:define name="content">
+        <h:form prependId="false">
+            <h:panelGrid columns="2" class="" columnClasses="col1,col2">
+                
+                <h:outputText value="Login ->"/>
+                <h:outputText value="#{pizzaController.pizza.login}" />
+                                 
+                
+            </h:panelGrid>
+            <br/>
+            <h:link value="retour" outcome="index"/>
+
+        </h:form>
+    </ui:define>
+
+</ui:composition>
